@@ -1,14 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
-
 # # LUCKY's/SAVEMART Python Developer Questions
-# 
-# 
-# 
-# 
-# 
+# Answers Auhtored By @Scott W. Davis
 
-# In[ ]:
 
 
 #initial table
@@ -35,10 +29,6 @@ Customers:
 
 
 # #### 1. Take a SQL database and pull the data into JSON format
-
-# In[ ]:
-
-
 import json
 import sqlites
 
@@ -58,22 +48,19 @@ print(json.dumps({'sqlData': sqlData}))
 [{"firstname":"John","lastname":"Smith"}, {"firstname":"Ava","lastname":"Muffinson"}, {"firstname":"Cailin","lastname":"Ninson"}, {"firstname":"Mike","lastname":"Peterson"}]
 
 
+
+
 # #### 2. Parse form APi to JSON
-
-# In[ ]:
-
-
 import requests
 
 results  = requests.get(url='https://<WebsiteURLhere>?print=pretty')
 print(results.json())
 
 
+
+
+
 # #### 3. Transfer a .CSV to JSON
-
-# In[ ]:
-
-
 import csv
 import json
 
